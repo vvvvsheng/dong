@@ -27,10 +27,6 @@ html {
   scroll-behavior: smooth;
 }
 
-html[lang="zh-Hans"] {
-  font-size: 21.333px;
-}
-
 html[lang="en"] {
   font-size: 16px;
 }
@@ -98,17 +94,19 @@ button {
   gap: 0.5rem;
 }
 
-.brand-cn {
-  font-family: var(--display-font);
-  font-size: 1.45rem;
-  letter-spacing: 0.08em;
-}
-
 .brand-en {
   color: var(--muted);
   font-size: 0.82rem;
   letter-spacing: 0.24em;
   text-transform: uppercase;
+}
+
+.brand-en-hero {
+  color: var(--text);
+  font-family: var(--display-font);
+  font-size: 1.45rem;
+  letter-spacing: 0.08em;
+  text-transform: none;
 }
 
 .site-nav {
@@ -117,39 +115,6 @@ button {
   gap: 1.1rem;
   font-size: 0.94rem;
   color: var(--muted);
-}
-
-.lang-switch {
-  display: inline-flex;
-  padding: 0.22rem;
-  border-radius: 999px;
-  border: 1px solid rgba(18, 18, 18, 0.12);
-  background: rgba(255, 255, 255, 0.54);
-}
-
-.lang-button {
-  min-width: 3rem;
-  min-height: 2.2rem;
-  padding: 0.35rem 0.85rem;
-  border: 0;
-  border-radius: 999px;
-  background: transparent;
-  color: var(--muted);
-  cursor: pointer;
-  transition:
-    background 180ms ease,
-    color 180ms ease,
-    transform 180ms ease;
-}
-
-.lang-button:hover,
-.lang-button:focus-visible {
-  transform: translateY(-1px);
-}
-
-.lang-button.is-active {
-  background: var(--bg-deep);
-  color: #fff;
 }
 
 .site-nav a {
