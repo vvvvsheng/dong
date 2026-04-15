@@ -27,6 +27,14 @@ html {
   scroll-behavior: smooth;
 }
 
+html[lang="zh-Hans"] {
+  font-size: 21.333px;
+}
+
+html[lang="en"] {
+  font-size: 16px;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
