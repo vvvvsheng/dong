@@ -21,14 +21,16 @@ http://127.0.0.1:8000
 
 This repo includes a GitHub Actions workflow at `.github/workflows/deploy-pages.yml`.
 
-### 1. Initialize Git
+### 1. Local Git Status
 
-```bash
-cd "/Users/lindong/Documents/日本潮流股票分析/艺术世界"
-git init
-git branch -M main
-git add .
-git commit -m "Initial artist website"
+Local git initialization and the first commit are already done in this workspace.
+
+Current branch: `main`
+
+Current initial commit:
+
+```text
+3bb34e8 Initial artist website for GitHub Pages
 ```
 
 ### 2. Create an Empty GitHub Repository
@@ -56,4 +58,3 @@ After pushing to `main`, GitHub will deploy the site automatically.
 - `styles.css`: visual system and responsive layout
 - `script.js`: bilingual content switching and work gallery behavior
 - `assets/works/`: artwork images extracted from the PDF
-
