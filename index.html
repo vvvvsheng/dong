@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>林东 Lindong | Artist Website</title>
+    <meta
+      name="description"
+      content="林东 Lindong 的艺术家网站。通过变形人物、几何切片与高饱和色域，描绘去中心化世界中的精神结构与生存状态。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-aura" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回首页">
+        <span class="brand-cn">林东</span>
+        <span class="brand-en">Lindong</span>
+      </a>
+      <div class="header-tools">
+        <nav class="site-nav" aria-label="主导航">
+          <a href="#works" id="nav-works">作品</a>
+          <a href="#statement" id="nav-statement">陈述</a>
+          <a href="#exhibitions" id="nav-exhibitions">展览</a>
+          <a href="#contact" id="nav-contact">联系</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Language switcher">
+          <button class="lang-button is-active" id="lang-zh" type="button">中</button>
+          <button class="lang-button" id="lang-en" type="button">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow" id="hero-eyebrow">Painter / Escape to Occupy</p>
+          <h1>
+            林东
+            <span>Lindong</span>
+          </h1>
+          <p class="hero-lede" id="hero-lede">
+            在“逃亡”与“占领”的过渡地带，林东通过变形人物、几何切片与高饱和色域，描绘去中心化世界中被自由裹挟的生物状态。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#works" id="hero-cta-primary">进入作品</a>
+            <a class="button button-secondary" href="#statement" id="hero-cta-secondary">阅读陈述</a>
+          </div>
+          <ul class="motif-list" aria-label="创作关键词">
+            <li id="motif-1">大脑位移</li>
+            <li id="motif-2">肢体置换</li>
+            <li id="motif-3">耳朵消失</li>
+            <li id="motif-4">区块自由</li>
+          </ul>
+        </div>
+
+        <div class="hero-stage" data-reveal>
+          <figure class="hero-card hero-card-main">
+            <img id="hero-image-main" src="assets/works/work-04.jpg" alt="林东作品 04" />
+          </figure>
+          <figure class="hero-card hero-card-top">
+            <img id="hero-image-top" src="assets/works/work-02.jpg" alt="林东作品 02" />
+          </figure>
+          <figure class="hero-card hero-card-bottom">
+            <img id="hero-image-bottom" src="assets/works/work-08.jpg" alt="林东作品 08" />
+          </figure>
+          <div class="hero-note">
+            <p class="hero-note-label" id="hero-note-label">作品主题</p>
+            <p id="hero-note-copy">
+              “观念和潜意识引导前行，不对称的空气连接世界，支离的躯干寻找区块自由精神。”
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="practice section">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow" id="practice-eyebrow">Practice</p>
+          <h2 id="practice-heading">从逃亡，到占领</h2>
+        </div>
+        <div class="practice-grid">
+          <article class="practice-card" data-reveal>
+            <h3 id="practice-card-1-title">简介</h3>
+            <p id="practice-card-1-copy">
+              从“逃亡”时期正在向“占领”时期开始过渡。去中心化世界的巴别塔尚未建立，根基未定，艺术家试图在其中寻找一块高地，并以“人性的反面丑”去表现被自由包裹的生物生活状态。
+            </p>
+          </article>
+          <article class="practice-card" data-reveal>
+            <h3 id="practice-card-2-title">主题</h3>
+            <p id="practice-card-2-copy">
+              这组作品将中心枢纽的大脑位移，将平衡的肢体置换方位，将聪慧的耳朵消失，构建新的世界。人物不再是肖像，而是精神结构、矛盾关系与潜意识运动的可见痕迹。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="works section" id="works">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow" id="works-eyebrow">Selected Works</p>
+          <h2 id="works-heading">作品现场</h2>
+        </div>
+        <div class="works-layout">
+          <aside class="works-stage" data-reveal>
+            <div class="stage-frame">
+              <img id="active-work-image" src="assets/works/work-01.jpg" alt="林东作品 01" />
+            </div>
+            <div class="stage-meta">
+              <p class="stage-index" id="active-work-index">作品 01</p>
+              <h3 id="active-work-title">几何切片中的双重面孔</h3>
+              <p class="stage-caption" id="active-work-caption">
+                在粉色大色域中，面孔和身体被切开并重新缝合，人物像被多个视角同时审视。
+              </p>
+              <dl class="stage-details">
+                <div>
+                  <dt id="stage-label-motif">关键词</dt>
+                  <dd id="active-work-motif">位移 / 切片 / 双重视角</dd>
+                </div>
+                <div>
+                  <dt id="stage-label-focus">线索</dt>
+                  <dd id="active-work-focus">人物被拆开，又在画面中心重新站立。</dd>
+                </div>
+              </dl>
+              <button
+                class="button button-primary stage-open"
+                id="open-modal"
+                type="button"
+                aria-label="查看作品大图"
+              >
+                查看大图
+              </button>
+            </div>
+          </aside>
+
+          <div class="works-list" id="works-list" data-reveal aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="statement section" id="statement">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow" id="statement-eyebrow">Statement</p>
+          <h2 id="statement-heading">艺术家陈述</h2>
+        </div>
+        <div class="statement-grid">
+          <article class="statement-card statement-card-main" data-reveal>
+            <p id="statement-main-1">
+              林东的创作正处在从“逃亡”走向“占领”的阶段。他以变形人物作为进入现实的入口，在去中心化的时代感受中不断拆解和重组面孔、躯干与肢体，使身体从被观看的对象转化为承载精神压力、欲望冲突与生存焦虑的现场。
+            </p>
+            <p id="statement-main-2">
+              画面中反复出现的十字、几何切面、异形器官和高饱和色块，共同构成一种兼具结构意识、情绪强度与超现实叙事气质的个人语言。对林东而言，绘画不是对现实的再现，而是对失衡秩序的重新编排。
+            </p>
+          </article>
+          <article class="statement-card" data-reveal>
+            <h3 id="statement-side-title">English Summary</h3>
+            <p id="statement-side-copy">Lindong works through distorted figures, displaced anatomy, and saturated color fields to construct psychological spaces shaped by decentralization, imbalance, and unstable freedom.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="exhibitions section" id="exhibitions">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow" id="exhibitions-eyebrow">CV</p>
+          <h2 id="exhibitions-heading">展览经历</h2>
+        </div>
+        <div class="timeline" data-reveal>
+          <article class="timeline-item">
+            <span class="timeline-year">2020</span>
+            <div class="timeline-content">
+              <h3 id="exhibition-1">自觉表现.当代艺术展</h3>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-year">2020</span>
+            <div class="timeline-content">
+              <h3 id="exhibition-2">幻想王国新锐艺术家提名展</h3>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-year">2020</span>
+            <div class="timeline-content">
+              <h3 id="exhibition-3">野生动物 WILD VOICES 摩登天空展</h3>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-year">2019</span>
+            <div class="timeline-content">
+              <h3 id="exhibition-4">798 表现当代艺术邀请展</h3>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-year">2019</span>
+            <div class="timeline-content">
+              <h3 id="exhibition-5">1897 厂艺术邀请展</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow" id="contact-eyebrow">Contact</p>
+          <h2 id="contact-heading">联系与合作</h2>
+        </div>
+        <div class="contact-panel" data-reveal>
+          <p id="contact-copy">
+            如需收藏咨询、展览合作或媒体联系，可在上线前将此处替换为你的真实邮箱、微信或社交账号。
+          </p>
+          <div class="contact-list">
+            <div>
+              <span id="contact-label-email">邮箱</span>
+              <strong id="contact-value-email">待补充</strong>
+            </div>
+            <div>
+              <span id="contact-label-social">微信 / Instagram</span>
+              <strong id="contact-value-social">待补充</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p id="footer-copy">© <span id="year"></span> Lindong. Built from the artist portfolio PDF.</p>
+    </footer>
+
+    <div class="work-modal" id="work-modal" aria-hidden="true">
+      <div class="work-modal-backdrop" data-close-modal></div>
+      <div class="work-modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" data-close-modal aria-label="关闭作品大图" id="modal-close">
+          ×
+        </button>
+        <div class="modal-layout">
+          <div class="modal-image-wrap">
+            <img id="modal-image" src="assets/works/work-01.jpg" alt="林东作品 01 大图" />
+          </div>
+          <div class="modal-copy">
+            <p class="stage-index" id="modal-index">作品 01</p>
+            <h3 id="modal-title">几何切片中的双重面孔</h3>
+            <p id="modal-caption">
+              在粉色大色域中，面孔和身体被切开并重新缝合，人物像被多个视角同时审视。
+            </p>
+            <p id="modal-focus">
+              人物被拆开，又在画面中心重新站立。十字与几何分区构成精神结构的隐喻。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
