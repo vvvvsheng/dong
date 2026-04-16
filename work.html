@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lindong | Work</title>
+    <meta
+      name="description"
+      content="Detailed artwork page from the Lindong archive."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-base-path="">
+    <div class="page-aura" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Back to homepage">
+        <span class="brand-en brand-en-hero">Lindong</span>
+      </a>
+      <div class="header-tools">
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="./">Home</a>
+          <a href="works/">Works</a>
+          <a href="about/">About</a>
+          <a href="about/#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="work-detail">
+      <section class="page-intro section">
+        <p class="eyebrow">Archive / Work Detail</p>
+        <h1 id="detail-title">Work</h1>
+        <p class="page-intro-copy">
+          A dedicated page for an individual painting, with image, context, and
+          navigation through the archive.
+        </p>
+      </section>
+
+      <section class="section detail-section">
+        <div class="detail-layout">
+          <div class="detail-image-panel">
+            <img id="detail-image" src="assets/works/work-01.jpg" alt="" />
+          </div>
+          <div class="detail-copy-panel">
+            <p class="stage-index" id="detail-index">Work 01</p>
+            <p class="detail-caption" id="detail-caption"></p>
+            <div class="detail-cards">
+              <div class="detail-card">
+                <span>Motif</span>
+                <strong id="detail-motif"></strong>
+              </div>
+              <div class="detail-card">
+                <span>Focus</span>
+                <strong id="detail-focus"></strong>
+              </div>
+            </div>
+            <div class="detail-actions">
+              <a class="button button-primary" id="detail-back-link" href="works/">Back to Archive</a>
+              <a class="button button-secondary" id="detail-contact-link" href="about/#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-navigation">
+          <a class="detail-nav-link" id="detail-prev" href="#"></a>
+          <a class="detail-nav-link" id="detail-next" href="#"></a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <p class="eyebrow">Archive</p>
+          <h2>More Works</h2>
+        </div>
+        <div class="detail-mini-grid" id="detail-more-works"></div>
+      </section>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="pages.js"></script>
+  </body>
+</html>

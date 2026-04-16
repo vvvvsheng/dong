@@ -18,10 +18,10 @@
       </a>
       <div class="header-tools">
         <nav class="site-nav" aria-label="Main navigation">
-          <a href="#works" id="nav-works">Works</a>
-          <a href="#statement" id="nav-statement">Statement</a>
-          <a href="#exhibitions" id="nav-exhibitions">Exhibitions</a>
-          <a href="#contact" id="nav-contact">Contact</a>
+          <a href="./" id="nav-home">Home</a>
+          <a href="works/" id="nav-works">Works</a>
+          <a href="about/" id="nav-about">About</a>
+          <a href="about/#contact" id="nav-contact">Contact</a>
         </nav>
       </div>
     </header>
@@ -32,14 +32,14 @@
           <p class="eyebrow" id="hero-eyebrow">Painter / Escape to Occupy</p>
           <h1>
             Lindong
-            <span>Artist Website</span>
+            <span>Painter / Visual Artist</span>
           </h1>
           <p class="hero-lede" id="hero-lede">
             In the transitional zone between escape and occupation, Lindong uses distorted figures, geometric slicing, and saturated color fields to depict beings carried along by unstable freedom in a decentralized world.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#works" id="hero-cta-primary">View Works</a>
-            <a class="button button-secondary" href="#statement" id="hero-cta-secondary">Read Statement</a>
+            <a class="button button-primary" href="works/" id="hero-cta-primary">View Archive</a>
+            <a class="button button-secondary" href="about/" id="hero-cta-secondary">About &amp; CV</a>
           </div>
           <ul class="motif-list" aria-label="Practice keywords">
             <li id="motif-1">Brain Displaced</li>
@@ -92,7 +92,11 @@
       <section class="works section" id="works">
         <div class="section-head" data-reveal>
           <p class="eyebrow" id="works-eyebrow">Selected Works</p>
-          <h2 id="works-heading">Works on View</h2>
+          <h2 id="works-heading">Featured Works</h2>
+          <p class="section-intro">
+            A rotating view into the archive. Open a dedicated work page for the
+            full image and contextual note.
+          </p>
         </div>
         <div class="works-layout">
           <aside class="works-stage" data-reveal>
@@ -123,10 +127,14 @@
               >
                 Open Full Image
               </button>
+              <a class="text-link stage-detail-link" id="view-detail" href="work.html?id=01">Open work page</a>
             </div>
           </aside>
 
           <div class="works-list" id="works-list" data-reveal aria-live="polite"></div>
+        </div>
+        <div class="section-actions" data-reveal>
+          <a class="text-link" href="works/">Browse the full archive</a>
         </div>
       </section>
 
@@ -147,6 +155,7 @@
           <article class="statement-card" data-reveal>
             <h3 id="statement-side-title">Practice Note</h3>
             <p id="statement-side-copy">The figure here is not made more complete. It is repeatedly cut apart, shifted, and rebuilt. The body becomes both the subject of narration and the carrier of psychic structure and historical atmosphere.</p>
+            <a class="text-link statement-link" href="about/">Read full statement and CV</a>
           </article>
         </div>
       </section>
@@ -188,16 +197,20 @@
             </div>
           </article>
         </div>
+        <div class="section-actions" data-reveal>
+          <a class="text-link" href="about/">View full profile</a>
+        </div>
       </section>
 
       <section class="contact section" id="contact">
         <div class="section-head" data-reveal>
           <p class="eyebrow" id="contact-eyebrow">Contact</p>
-          <h2 id="contact-heading">Contact &amp; Collaboration</h2>
+          <h2 id="contact-heading">Contact</h2>
         </div>
         <div class="contact-panel" data-reveal>
           <p id="contact-copy">
-            For collection inquiries, exhibition collaboration, or press contact, replace this section with your actual email, WeChat, or social media accounts before launch.
+            For exhibitions, studio visits, commissions, or collection
+            inquiries, please contact directly.
           </p>
           <div class="contact-list">
             <div>
@@ -237,6 +250,7 @@
       </div>
     </div>
 
+    <script src="data.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
