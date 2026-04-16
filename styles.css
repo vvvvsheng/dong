@@ -113,10 +113,8 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 1.1rem;
-  font-size: 0.88rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: rgba(22, 22, 22, 0.58);
+  font-size: 0.94rem;
+  color: var(--muted);
 }
 
 .site-nav a {
@@ -183,10 +181,10 @@ button {
 }
 
 .hero-lede {
-  max-width: 31rem;
-  margin: 1.7rem 0 0;
-  font-size: clamp(1.06rem, 1.9vw, 1.28rem);
-  line-height: 1.92;
+  max-width: 34rem;
+  margin: 1.5rem 0 0;
+  font-size: clamp(1.05rem, 2vw, 1.34rem);
+  line-height: 1.8;
   color: rgba(22, 22, 22, 0.82);
 }
 
@@ -201,16 +199,14 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 3.05rem;
-  padding: 0.85rem 1.35rem;
+  min-height: 3rem;
+  padding: 0.85rem 1.3rem;
   border-radius: 999px;
   border: 1px solid transparent;
-  letter-spacing: 0.04em;
   transition:
     transform 180ms ease,
     border-color 180ms ease,
-    background 180ms ease,
-    box-shadow 180ms ease;
+    background 180ms ease;
   cursor: pointer;
 }
 
@@ -222,12 +218,11 @@ button {
 .button-primary {
   background: var(--bg-deep);
   color: #fff;
-  box-shadow: 0 12px 24px rgba(18, 18, 18, 0.18);
 }
 
 .button-secondary {
-  border-color: rgba(18, 18, 18, 0.14);
-  background: rgba(255, 255, 255, 0.58);
+  border-color: rgba(18, 18, 18, 0.16);
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .motif-list {
@@ -244,8 +239,7 @@ button {
   border-radius: 999px;
   border: 1px solid rgba(18, 18, 18, 0.1);
   background: rgba(255, 255, 255, 0.44);
-  font-size: 0.88rem;
-  letter-spacing: 0.02em;
+  font-size: 0.92rem;
 }
 
 .hero-stage {
@@ -317,7 +311,7 @@ button {
 
 .hero-note p:last-child {
   margin: 0;
-  line-height: 1.82;
+  line-height: 1.72;
 }
 
 .section-head {
@@ -387,7 +381,7 @@ button {
 .works-stage {
   position: sticky;
   top: 6.6rem;
-  padding: 1.2rem;
+  padding: 1.1rem;
   border-radius: 28px;
   box-shadow: var(--shadow);
 }
@@ -406,7 +400,7 @@ button {
 }
 
 .stage-meta {
-  padding: 1.15rem 0.25rem 0.2rem;
+  padding: 1rem 0.2rem 0.2rem;
 }
 
 .stage-index {
@@ -424,10 +418,9 @@ button {
 }
 
 .stage-caption {
-  margin: 0.95rem 0 0;
+  margin: 0.8rem 0 0;
   color: rgba(22, 22, 22, 0.82);
-  font-size: 1rem;
-  line-height: 1.85;
+  line-height: 1.8;
 }
 
 .stage-details {
@@ -438,9 +431,9 @@ button {
 }
 
 .stage-details div {
-  padding: 0.95rem 1rem;
+  padding: 0.9rem 1rem;
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.66);
+  background: rgba(255, 255, 255, 0.58);
 }
 
 .stage-details dt {
@@ -461,17 +454,17 @@ button {
 .works-list {
   display: grid;
   gap: 1rem;
-  padding: 1.05rem;
+  padding: 1rem;
   border-radius: 28px;
   box-shadow: var(--shadow);
 }
 
 .work-item {
   display: grid;
-  grid-template-columns: 156px minmax(0, 1fr);
-  gap: 1.1rem;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 1rem;
   width: 100%;
-  padding: 0.95rem;
+  padding: 0.9rem;
   border-radius: 18px;
   text-align: left;
   cursor: pointer;
@@ -505,7 +498,7 @@ button {
 .work-copy {
   display: grid;
   align-content: center;
-  gap: 0.45rem;
+  gap: 0.38rem;
 }
 
 .work-copy h3 {
@@ -516,7 +509,6 @@ button {
 .work-copy p {
   margin: 0;
   color: rgba(22, 22, 22, 0.78);
-  font-size: 0.96rem;
   line-height: 1.72;
 }
 
@@ -547,14 +539,12 @@ button {
 
 .contact-panel {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
-  gap: 1.25rem;
-  align-items: start;
+  gap: 1.2rem;
 }
 
 .contact-list {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.8rem;
 }
 
@@ -562,7 +552,6 @@ button {
   padding: 1rem 1.1rem;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.56);
-  border: 1px solid rgba(18, 18, 18, 0.06);
 }
 
 .contact-list span {
@@ -574,11 +563,6 @@ button {
 
 .contact-list strong {
   font-size: 1rem;
-}
-
-.contact-link {
-  text-decoration: underline;
-  text-underline-offset: 0.18rem;
 }
 
 .site-footer {
@@ -695,8 +679,7 @@ button {
   .works-layout,
   .statement-grid,
   .practice-grid,
-  .modal-layout,
-  .contact-panel {
+  .modal-layout {
     grid-template-columns: 1fr;
   }
 
