@@ -5,6 +5,20 @@
   --line: rgba(18, 18, 18, 0.12);
   --text: #161616;
   --muted: rgba(22, 22, 22, 0.68);
+  --text-soft: rgba(22, 22, 22, 0.82);
+  --header-bg: rgba(248, 244, 235, 0.72);
+  --grid-line: rgba(18, 18, 18, 0.03);
+  --panel-surface: rgba(255, 255, 255, 0.58);
+  --panel-surface-strong: rgba(255, 255, 255, 0.88);
+  --button-primary-text: #ffffff;
+  --frame-fill: #ffffff;
+  --note-bg: rgba(18, 18, 18, 0.92);
+  --note-text: rgba(255, 255, 255, 0.86);
+  --note-muted: rgba(255, 255, 255, 0.56);
+  --modal-panel-bg: rgba(245, 241, 234, 0.96);
+  --modal-panel-border: rgba(255, 255, 255, 0.22);
+  --modal-close-bg: rgba(18, 18, 18, 0.92);
+  --modal-close-text: #ffffff;
   --accent-lime: #9be72e;
   --accent-coral: #f35947;
   --accent-pink: #f0acc7;
@@ -15,6 +29,30 @@
   --radius-sm: 14px;
   --display-font: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Baskerville, serif;
   --ui-font: Optima, "Avenir Next", "Segoe UI", sans-serif;
+}
+
+html[data-theme="night"] {
+  --bg: #111111;
+  --bg-deep: #f4efe6;
+  --bg-panel: rgba(24, 24, 24, 0.82);
+  --line: rgba(255, 255, 255, 0.12);
+  --text: #f4efe6;
+  --muted: rgba(244, 239, 230, 0.66);
+  --text-soft: rgba(244, 239, 230, 0.82);
+  --header-bg: rgba(14, 14, 14, 0.76);
+  --grid-line: rgba(255, 255, 255, 0.04);
+  --panel-surface: rgba(255, 255, 255, 0.07);
+  --panel-surface-strong: rgba(255, 255, 255, 0.12);
+  --button-primary-text: #111111;
+  --frame-fill: rgba(255, 255, 255, 0.1);
+  --note-bg: rgba(255, 255, 255, 0.08);
+  --note-text: rgba(255, 255, 255, 0.92);
+  --note-muted: rgba(255, 255, 255, 0.6);
+  --modal-panel-bg: rgba(18, 18, 18, 0.96);
+  --modal-panel-border: rgba(255, 255, 255, 0.08);
+  --modal-close-bg: rgba(244, 239, 230, 0.9);
+  --modal-close-text: #111111;
+  --shadow: 0 28px 60px rgba(0, 0, 0, 0.34);
 }
 
 *,
@@ -42,6 +80,13 @@ body {
     linear-gradient(180deg, #f8f4eb 0%, #f1ede3 36%, #eae4d8 100%);
 }
 
+html[data-theme="night"] body {
+  background:
+    radial-gradient(circle at top left, rgba(243, 89, 71, 0.14), transparent 24rem),
+    radial-gradient(circle at 82% 18%, rgba(125, 199, 239, 0.12), transparent 20rem),
+    linear-gradient(180deg, #171717 0%, #111111 40%, #0a0a0a 100%);
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -61,8 +106,8 @@ button {
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(90deg, rgba(18, 18, 18, 0.03) 1px, transparent 1px),
-    linear-gradient(rgba(18, 18, 18, 0.03) 1px, transparent 1px);
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(var(--grid-line) 1px, transparent 1px);
   background-size: 24px 24px;
   mask-image: radial-gradient(circle at center, black 55%, transparent 100%);
   opacity: 0.35;
@@ -78,14 +123,34 @@ button {
   gap: 1.5rem;
   padding: 1rem clamp(1.1rem, 3vw, 2.2rem);
   backdrop-filter: blur(18px);
-  background: rgba(248, 244, 235, 0.72);
-  border-bottom: 1px solid rgba(18, 18, 18, 0.08);
+  background: var(--header-bg);
+  border-bottom: 1px solid var(--line);
 }
 
 .header-tools {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.theme-toggle {
+  min-height: 2.7rem;
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel-surface);
+  color: var(--text);
+  cursor: pointer;
+  transition:
+    transform 180ms ease,
+    background 180ms ease,
+    border-color 180ms ease;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  transform: translateY(-2px);
+  background: var(--panel-surface-strong);
 }
 
 .brand {
@@ -143,7 +208,7 @@ button {
 .page-intro-copy {
   max-width: 42rem;
   margin: 1rem 0 0;
-  color: rgba(22, 22, 22, 0.78);
+  color: var(--text-soft);
   line-height: 1.82;
 }
 
@@ -204,7 +269,7 @@ button {
   margin: 1.5rem 0 0;
   font-size: clamp(1.05rem, 2vw, 1.34rem);
   line-height: 1.8;
-  color: rgba(22, 22, 22, 0.82);
+  color: var(--text-soft);
 }
 
 .hero-actions {
@@ -236,12 +301,12 @@ button {
 
 .button-primary {
   background: var(--bg-deep);
-  color: #fff;
+  color: var(--button-primary-text);
 }
 
 .button-secondary {
-  border-color: rgba(18, 18, 18, 0.16);
-  background: rgba(255, 255, 255, 0.4);
+  border-color: var(--line);
+  background: var(--panel-surface);
 }
 
 .text-link {
@@ -265,8 +330,8 @@ button {
 .motif-list li {
   padding: 0.55rem 0.9rem;
   border-radius: 999px;
-  border: 1px solid rgba(18, 18, 18, 0.1);
-  background: rgba(255, 255, 255, 0.44);
+  border: 1px solid var(--line);
+  background: var(--panel-surface);
   font-size: 0.92rem;
 }
 
@@ -280,8 +345,8 @@ button {
   overflow: hidden;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
-  border: 1px solid rgba(18, 18, 18, 0.08);
-  background: #fff;
+  border: 1px solid var(--line);
+  background: var(--frame-fill);
   animation: drift 10s ease-in-out infinite;
 }
 
@@ -324,14 +389,14 @@ button {
   width: min(22rem, 42%);
   padding: 1.25rem 1.35rem;
   border-radius: var(--radius-md);
-  background: rgba(18, 18, 18, 0.92);
-  color: rgba(255, 255, 255, 0.86);
+  background: var(--note-bg);
+  color: var(--note-text);
   box-shadow: var(--shadow);
 }
 
 .hero-note-label {
   margin: 0 0 0.7rem;
-  color: rgba(255, 255, 255, 0.56);
+  color: var(--note-muted);
   font-size: 0.78rem;
   letter-spacing: 0.24em;
   text-transform: uppercase;
@@ -370,7 +435,7 @@ button {
 .timeline,
 .works-list,
 .work-item {
-  border: 1px solid rgba(18, 18, 18, 0.08);
+  border: 1px solid var(--line);
   background: var(--bg-panel);
   backdrop-filter: blur(12px);
 }
@@ -393,7 +458,7 @@ button {
 .statement-card p,
 .contact-panel p {
   margin-bottom: 0;
-  color: rgba(22, 22, 22, 0.82);
+  color: var(--text-soft);
   line-height: 1.9;
 }
 
@@ -451,7 +516,7 @@ button {
 
 .stage-caption {
   margin: 0.8rem 0 0;
-  color: rgba(22, 22, 22, 0.82);
+  color: var(--text-soft);
   line-height: 1.8;
 }
 
@@ -465,7 +530,7 @@ button {
 .stage-details div {
   padding: 0.9rem 1rem;
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.58);
+  background: var(--panel-surface);
 }
 
 .stage-details dt {
@@ -514,8 +579,8 @@ button {
 .work-item:focus-visible,
 .work-item.is-active {
   transform: translateY(-2px);
-  border-color: rgba(18, 18, 18, 0.2);
-  background: rgba(255, 255, 255, 0.88);
+  border-color: var(--line);
+  background: var(--panel-surface-strong);
 }
 
 .work-thumb {
@@ -544,7 +609,7 @@ button {
 
 .work-copy p {
   margin: 0;
-  color: rgba(22, 22, 22, 0.78);
+  color: var(--text-soft);
   line-height: 1.72;
 }
 
@@ -562,7 +627,7 @@ button {
   gap: 1rem;
   padding: 1rem;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.52);
+  background: var(--panel-surface);
 }
 
 .timeline-year {
@@ -587,7 +652,7 @@ button {
 .contact-list div {
   padding: 1rem 1.1rem;
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.56);
+  background: var(--panel-surface);
 }
 
 .contact-list span {
@@ -657,7 +722,7 @@ button {
 
 .archive-card-copy p {
   margin: 0;
-  color: rgba(22, 22, 22, 0.78);
+  color: var(--text-soft);
   line-height: 1.78;
 }
 
@@ -680,7 +745,7 @@ button {
 
 .detail-image-panel,
 .detail-copy-panel {
-  border: 1px solid rgba(18, 18, 18, 0.08);
+  border: 1px solid var(--line);
   background: var(--bg-panel);
   backdrop-filter: blur(12px);
   border-radius: 28px;
@@ -704,7 +769,7 @@ button {
 
 .detail-caption {
   margin: 0.95rem 0 0;
-  color: rgba(22, 22, 22, 0.82);
+  color: var(--text-soft);
   line-height: 1.85;
 }
 
@@ -750,8 +815,8 @@ button {
 .detail-nav-link {
   padding: 1rem 1.1rem;
   border-radius: 18px;
-  border: 1px solid rgba(18, 18, 18, 0.08);
-  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--line);
+  background: var(--panel-surface);
   line-height: 1.72;
 }
 
@@ -774,8 +839,8 @@ button {
 }
 
 .detail-mini.is-current {
-  border-color: rgba(18, 18, 18, 0.18);
-  background: rgba(255, 255, 255, 0.86);
+  border-color: var(--line);
+  background: var(--panel-surface-strong);
 }
 
 .site-footer {
@@ -817,8 +882,8 @@ button {
   max-height: calc(100vh - 2rem);
   overflow: auto;
   border-radius: 28px;
-  background: rgba(245, 241, 234, 0.96);
-  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: var(--modal-panel-bg);
+  border: 1px solid var(--modal-panel-border);
   box-shadow: 0 28px 80px rgba(0, 0, 0, 0.34);
 }
 
@@ -832,8 +897,8 @@ button {
   margin: 0.8rem 0.8rem 0 0;
   border: 0;
   border-radius: 999px;
-  background: rgba(18, 18, 18, 0.92);
-  color: #fff;
+  background: var(--modal-close-bg);
+  color: var(--modal-close-text);
   font-size: 1.8rem;
   line-height: 1;
   cursor: pointer;
