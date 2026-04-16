@@ -3,243 +3,161 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lindong | Artist Website</title>
+    <title>Lindong | Portfolio</title>
     <meta
       name="description"
-      content="The artist website of Lindong. Distorted figures, geometric slices, and saturated color fields describe psychic structures and states of survival in a decentralized world."
+      content="Lindong portfolio website featuring selected paintings, artist statement, exhibitions, and contact information."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-aura" aria-hidden="true"></div>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Back to homepage">
-        <span class="brand-en brand-en-hero">Lindong</span>
-      </a>
-      <div class="header-tools">
-        <nav class="site-nav" aria-label="Main navigation">
-          <a href="#works" id="nav-works">Works</a>
-          <a href="#statement" id="nav-statement">Statement</a>
-          <a href="#exhibitions" id="nav-exhibitions">Exhibitions</a>
-          <a href="#contact" id="nav-contact">Contact</a>
-        </nav>
-      </div>
-    </header>
-
-    <main id="top">
-      <section class="hero section">
-        <div class="hero-copy" data-reveal>
-          <p class="eyebrow" id="hero-eyebrow">Painter / Escape to Occupy</p>
-          <h1>
-            Lindong
-            <span>Artist Website</span>
-          </h1>
-          <p class="hero-lede" id="hero-lede">
-            In the transitional zone between escape and occupation, Lindong uses distorted figures, geometric slicing, and saturated color fields to depict beings carried along by unstable freedom in a decentralized world.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#works" id="hero-cta-primary">View Works</a>
-            <a class="button button-secondary" href="#statement" id="hero-cta-secondary">Read Statement</a>
-          </div>
-          <ul class="motif-list" aria-label="Practice keywords">
-            <li id="motif-1">Brain Displaced</li>
-            <li id="motif-2">Limbs Reassigned</li>
-            <li id="motif-3">Ears Removed</li>
-            <li id="motif-4">Block Freedom</li>
-          </ul>
-        </div>
-
-        <div class="hero-stage" data-reveal>
-          <figure class="hero-card hero-card-main">
-            <img id="hero-image-main" src="assets/works/work-04.jpg" alt="Lindong work 04" />
-          </figure>
-          <figure class="hero-card hero-card-top">
-            <img id="hero-image-top" src="assets/works/work-02.jpg" alt="Lindong work 02" />
-          </figure>
-          <figure class="hero-card hero-card-bottom">
-            <img id="hero-image-bottom" src="assets/works/work-08.jpg" alt="Lindong work 08" />
-          </figure>
-          <div class="hero-note">
-            <p class="hero-note-label" id="hero-note-label">Theme</p>
-            <p id="hero-note-copy">
-              "Ideas and the subconscious lead the way; asymmetrical air connects the world, and broken torsos search for a spirit of block-like freedom."
+    <main class="site-shell">
+      <section class="intro">
+        <div class="container intro-inner">
+          <div class="intro-copy">
+            <p class="eyebrow">Lindong</p>
+            <h1>Painter / Visual Artist</h1>
+            <p class="intro-text">
+              My work explores psychic pressure, fractured identity, and the uneasy
+              relationship between the body and systems of occupation. Through
+              distorted figures, geometric interruption, and saturated color
+              fields, I construct images of tension, dislocation, and resistance.
             </p>
           </div>
         </div>
       </section>
 
-      <section class="practice section">
-        <div class="section-head" data-reveal>
-          <p class="eyebrow" id="practice-eyebrow">Practice</p>
-          <h2 id="practice-heading">From Escape to Occupation</h2>
-        </div>
-        <div class="practice-grid">
-          <article class="practice-card" data-reveal>
-            <h3 id="practice-card-1-title">Context</h3>
-            <p id="practice-card-1-copy">
-              This body of work marks a transition from an "escape" phase toward one of "occupation." The decentralized Babel of the world remains unfinished and unstable, so the artist searches for a piece of higher ground and occupies it by picturing the anti-human, ugly reverse of freedom.
+      <section class="section section-bordered" id="selected-works-section">
+        <div class="container">
+          <div class="section-copy section-copy-narrow">
+            <h2>Selected Works</h2>
+            <p>
+              These works are part of an ongoing inquiry into escape, control,
+              deformation, and the fragile space of human freedom.
             </p>
-          </article>
-          <article class="practice-card" data-reveal>
-            <h3 id="practice-card-2-title">Theme</h3>
-            <p id="practice-card-2-copy">
-              These works displace the brain as the central hub, reassign the balance of limbs, and erase the ears in order to construct a new world. The figure is no longer a portrait but visible evidence of mental structure, contradiction, and subconscious movement.
-            </p>
-          </article>
+          </div>
+          <div class="works-grid" id="selected-works" aria-live="polite"></div>
         </div>
       </section>
 
-      <section class="works section" id="works">
-        <div class="section-head" data-reveal>
-          <p class="eyebrow" id="works-eyebrow">Selected Works</p>
-          <h2 id="works-heading">Works on View</h2>
-        </div>
-        <div class="works-layout">
-          <aside class="works-stage" data-reveal>
-            <div class="stage-frame">
-              <img id="active-work-image" src="assets/works/work-01.jpg" alt="Lindong work 01" />
-            </div>
-            <div class="stage-meta">
-              <p class="stage-index" id="active-work-index">Work 01</p>
-              <h3 id="active-work-title">A Double Face in Geometric Slices</h3>
-              <p class="stage-caption" id="active-work-caption">
-                Within a wide pink field, face and body are cut apart and stitched back together, as if the figure were being examined from several viewpoints at once.
+      <section class="section section-bordered">
+        <div class="container split-grid">
+          <article>
+            <h2>Practice</h2>
+            <div class="rich-text">
+              <p>
+                My practice centers on painting as a psychological and spatial
+                field. I use the body not as a stable subject, but as a site of
+                pressure, distortion, and transformation. Fragments of limbs,
+                displaced organs, blocked gestures, and geometric divisions recur
+                throughout the work, forming a visual language of internal
+                conflict and external control.
               </p>
-              <dl class="stage-details">
-                <div>
-                  <dt id="stage-label-motif">Motif</dt>
-                  <dd id="active-work-motif">Displacement / Slicing / Split View</dd>
-                </div>
-                <div>
-                  <dt id="stage-label-focus">Focus</dt>
-                  <dd id="active-work-focus">The figure is broken apart and made to stand again at the center.</dd>
-                </div>
-              </dl>
-              <button
-                class="button button-primary stage-open"
-                id="open-modal"
-                type="button"
-                aria-label="Open the full-size artwork image"
-              >
-                Open Full Image
-              </button>
+              <p>
+                Rather than illustrating a narrative, I build compressed
+                emotional situations. The paintings move between figuration and
+                abstraction, intimacy and violence, stillness and interruption.
+                What appears in them is not simply a body, but a body being
+                reorganized by fear, discipline, memory, and invisible systems
+                of force.
+              </p>
             </div>
-          </aside>
+          </article>
 
-          <div class="works-list" id="works-list" data-reveal aria-live="polite"></div>
+          <article>
+            <h2>Statement</h2>
+            <div class="rich-text">
+              <p>
+                My recent work investigates the condition of being occupied
+                psychologically, socially, and spatially. I am interested in the
+                moment when a person no longer feels fully aligned with their own
+                body, thoughts, or desires. In these paintings, the figure
+                becomes unstable: ears are removed, limbs are reassigned, organs
+                are displaced, gestures are blocked, and space is cut into
+                artificial structures.
+              </p>
+              <p>
+                These distortions are not surreal effects for their own sake.
+                They are ways of speaking about pressure: the pressure to adapt,
+                to perform, to obey, to remain functional, and to survive within
+                systems that quietly reorganize human experience. The body in my
+                work is often compressed, interrupted, or segmented because it
+                carries the trace of that occupation.
+              </p>
+              <p>
+                Color plays a crucial role in this process. I use saturated,
+                often seductive color fields against scenes of discomfort,
+                fragmentation, or unease. This tension allows beauty and
+                violence to coexist within the same image. I want the viewer to
+                feel both attraction and resistance: to enter the work visually,
+                but remain unsettled psychologically.
+              </p>
+              <p>
+                Painting, for me, is a way to make inner conflict visible. It is
+                also a way to resist smoothness, coherence, and the illusion of
+                control. What I seek is not a resolved image, but a charged one:
+                an image in which freedom appears threatened, deformed, and
+                still somehow present.
+              </p>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="statement section" id="statement">
-        <div class="section-head" data-reveal>
-          <p class="eyebrow" id="statement-eyebrow">Statement</p>
-          <h2 id="statement-heading">Artist Statement</h2>
-        </div>
-        <div class="statement-grid">
-          <article class="statement-card statement-card-main" data-reveal>
-            <p id="statement-main-1">
-              Lindong's practice is moving from a phase of escape toward one of occupation. Through distorted figures, faces, torsos, and limbs are repeatedly dismantled and reassembled, turning the body from an object of viewing into a site charged with psychic pressure, conflicted desire, and existential unease.
+      <section class="section section-bordered">
+        <div class="container">
+          <div class="section-copy section-copy-narrow">
+            <h2>Works</h2>
+            <p>
+              The works are organized as evolving fragments of a larger inquiry
+              into deformation, occupation, and the unstable condition of human
+              freedom. Each series approaches the body as a contested space:
+              cut, displaced, restrained, or reassembled.
             </p>
-            <p id="statement-main-2">
-              Crosses, geometric cuts, hybrid organs, and saturated color fields recur throughout the paintings to form a personal language charged with structural awareness, emotional intensity, and surreal narrative force. For Lindong, painting is not a reproduction of reality but a reordering of an unstable world.
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-bordered" id="exhibitions">
+        <div class="container">
+          <div class="section-copy section-copy-narrow">
+            <h2>Exhibitions</h2>
+            <p>
+              A selection of solo and group exhibitions presenting the development
+              of my painting practice.
             </p>
-          </article>
-          <article class="statement-card" data-reveal>
-            <h3 id="statement-side-title">Practice Note</h3>
-            <p id="statement-side-copy">The figure here is not made more complete. It is repeatedly cut apart, shifted, and rebuilt. The body becomes both the subject of narration and the carrier of psychic structure and historical atmosphere.</p>
-          </article>
+          </div>
+          <div class="exhibition-list" id="exhibition-list" aria-live="polite"></div>
         </div>
       </section>
 
-      <section class="exhibitions section" id="exhibitions">
-        <div class="section-head" data-reveal>
-          <p class="eyebrow" id="exhibitions-eyebrow">CV</p>
-          <h2 id="exhibitions-heading">Exhibitions</h2>
-        </div>
-        <div class="timeline" data-reveal>
-          <article class="timeline-item">
-            <span class="timeline-year">2020</span>
-            <div class="timeline-content">
-              <h3 id="exhibition-1">Self-Conscious Expression: Contemporary Art Exhibition</h3>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <span class="timeline-year">2020</span>
-            <div class="timeline-content">
-              <h3 id="exhibition-2">Fantasy Kingdom Emerging Artist Nomination Exhibition</h3>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <span class="timeline-year">2020</span>
-            <div class="timeline-content">
-              <h3 id="exhibition-3">WILD VOICES Modern Sky Exhibition</h3>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <span class="timeline-year">2019</span>
-            <div class="timeline-content">
-              <h3 id="exhibition-4">798 Expression Contemporary Art Invitational Exhibition</h3>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <span class="timeline-year">2019</span>
-            <div class="timeline-content">
-              <h3 id="exhibition-5">1897 Factory Art Invitational Exhibition</h3>
-            </div>
-          </article>
-        </div>
-      </section>
+      <section class="section section-bordered" id="contact">
+        <div class="container">
+          <div class="section-copy section-copy-narrow">
+            <h2>Contact</h2>
+            <p>
+              For exhibitions, commissions, studio visits, or other inquiries,
+              please get in touch.
+            </p>
+          </div>
 
-      <section class="contact section" id="contact">
-        <div class="section-head" data-reveal>
-          <p class="eyebrow" id="contact-eyebrow">Contact</p>
-          <h2 id="contact-heading">Contact &amp; Collaboration</h2>
-        </div>
-        <div class="contact-panel" data-reveal>
-          <p id="contact-copy">
-            For collection inquiries, exhibition collaboration, or press contact, replace this section with your actual email, WeChat, or social media accounts before launch.
-          </p>
           <div class="contact-list">
-            <div>
-              <span id="contact-label-email">Email</span>
-              <strong id="contact-value-email">1249406297@qq.com</strong>
-            </div>
-            <div>
-              <span id="contact-label-social">WeChat</span>
-              <strong id="contact-value-social">1249406297@qq.com</strong>
-            </div>
+            <p>
+              Email:
+              <a href="mailto:1249406297@qq.com">1249406297@qq.com</a>
+            </p>
+            <p>WeChat: 1249406297@qq.com</p>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p id="footer-copy">© <span id="year"></span> Lindong. Built from the artist portfolio PDF.</p>
-    </footer>
-
-    <div class="work-modal" id="work-modal" aria-hidden="true">
-      <div class="work-modal-backdrop" data-close-modal></div>
-      <div class="work-modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-        <button class="modal-close" type="button" data-close-modal aria-label="Close artwork image" id="modal-close">
-          ×
-        </button>
-        <div class="modal-layout">
-          <div class="modal-image-wrap">
-            <img id="modal-image" src="assets/works/work-01.jpg" alt="Lindong work 01 full-size view" />
-          </div>
-          <div class="modal-copy">
-            <p class="stage-index" id="modal-index">Work 01</p>
-            <h3 id="modal-title">A Double Face in Geometric Slices</h3>
-            <p id="modal-caption">
-              Within a wide pink field, face and body are cut apart and stitched back together, as if the figure were being examined from several viewpoints at once.
-            </p>
-            <p id="modal-focus">
-              The figure is broken apart and made to stand again at the center. Crosses and geometric partitions become metaphors for a fractured mental structure.
-            </p>
-          </div>
-        </div>
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Lindong. All rights reserved.</p>
+        <p>Lindong</p>
       </div>
-    </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
