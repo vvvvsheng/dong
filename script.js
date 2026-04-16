@@ -221,7 +221,10 @@ function setupReveal() {
 }
 
 function setupFooterYear() {
-  document.querySelector("#year").textContent = new Date().getFullYear();
+  const yearNode = document.querySelector("#year");
+  if (yearNode) {
+    yearNode.textContent = new Date().getFullYear();
+  }
 }
 
 renderWorks();
